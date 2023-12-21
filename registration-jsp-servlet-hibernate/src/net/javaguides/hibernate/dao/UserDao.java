@@ -8,12 +8,6 @@ import net.javaguides.hibernate.util.HibernateUtil;
 
 
 public class UserDao {
-
-	/**
-	 * Save User
-	 * @param user
-	 * @return 
-	 */
 	public void saveUser(User user) {
 		Transaction transaction = null;
 		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
